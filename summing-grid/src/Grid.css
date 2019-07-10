@@ -1,0 +1,19 @@
+.Grid {
+  display: flex;
+  border: solid 1px #000;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 360px) {
+  .Grid {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 720px) {
+  .Grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+  }
+}
